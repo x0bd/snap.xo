@@ -8,6 +8,7 @@ import CodeEditor from "./components/CodeEditor";
 import { backgrounds, themes, languages } from "./lib/lib";
 import { Download } from "lucide-react";
 import LanguageSelector from "./components/LanguageSelector";
+import CodeThemeSelector from "./components/CodeThemeSelector";
 
 export default function Page() {
 	const editorRef = useRef(null);
@@ -26,6 +27,8 @@ export default function Page() {
 					setLanguage={setLanguage}
 					setActiveIcon={setActiveIcon}
 				/>
+
+				<CodeThemeSelector theme={theme} setTheme={setTheme} />
 			</header>
 			<Footer />
 		</main>
