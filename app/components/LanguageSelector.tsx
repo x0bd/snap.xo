@@ -1,7 +1,7 @@
 "use client";
 
 import { ChevronDown } from "lucide-react";
-import { languages } from "../lib/utils";
+import { languages } from "../lib/lib";
 import OutsideClickHandler from "react-outside-click-handler";
 import { useState } from "react";
 

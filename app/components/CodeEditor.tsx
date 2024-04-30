@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Resizable } from "re-resizable";
 import AceEditor from "react-ace";
 
-import { getExtension, initialCode } from "../lib/utils";
+import { getExtension, initialCode } from "../lib/lib";
 
 // languages
 import "ace-builds/src-noconflict/mode-csharp";

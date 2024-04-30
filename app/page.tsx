@@ -5,7 +5,7 @@ import html2canvas from "html2canvas";
 import AceEditor from "react-ace";
 import Footer from "./components/Footer";
 import CodeEditor from "./components/CodeEditor";
-import { backgrounds, themes, languages } from "./lib/utils";
+import { backgrounds, themes, languages } from "./lib/lib";
 import { Download } from "lucide-react";
 import LanguageSelector from "./components/LanguageSelector";
 
