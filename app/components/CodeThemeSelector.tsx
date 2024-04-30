@@ -11,10 +11,10 @@ interface CodeThemeSelectorProps {
 }
 
 const CodeThemeSelector = ({ theme, setTheme }: CodeThemeSelectorProps) => {
-	const [showDropDown, setshowDropDown] = useState(false);
+	const [showDropDown, setShowDropDown] = useState(false);
 
 	const toggleDropDown = () => {
-		setshowDropDown(!showDropDown);
+		setShowDropDown(!showDropDown);
 	};
 
 	const handleThemeChange = (newTheme: string) => {
@@ -22,7 +22,7 @@ const CodeThemeSelector = ({ theme, setTheme }: CodeThemeSelectorProps) => {
 	};
 
 	return (
-		<OutsideClickHandler onOutsideClick={() => setshowDropDown(false)}>
+		<OutsideClickHandler onOutsideClick={() => setShowDropDown(false)}>
 			<div className="theme-selector" onClick={toggleDropDown}>
 				<p className="py-[5px] font-medium text-sm">Code Colors</p>
 				<div className="hover:text-slate-50 dropdown-title transition-all duration-300 ease-in-out  capitalize w-[120px]">

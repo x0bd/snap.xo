@@ -6,28 +6,28 @@ import ace from "react-ace";
 import { getExtension, initialCode } from "../lib/lib";
 
 // languages
-import "ace-builds/src-noconflict/mode-csharp";
-import "ace-builds/src-noconflict/mode-html";
-import "ace-builds/src-noconflict/mode-css";
-import "ace-builds/src-noconflict/mode-python";
-import "ace-builds/src-noconflict/mode-javascript";
-import "ace-builds/src-noconflict/mode-java";
-import "ace-builds/src-noconflict/mode-typescript";
-import "ace-builds/src-noconflict/mode-lua";
-import "ace-builds/src-noconflict/mode-rust";
-import "ace-builds/src-noconflict/mode-golang";
-import "ace-builds/src-noconflict/mode-dart";
-import "ace-builds/src-noconflict/mode-swift";
-import "ace-builds/src-noconflict/mode-zig";
-import "ace-builds/src-noconflict/mode-ruby";
+// import "ace-builds/src-noconflict/mode-csharp";
+// import "ace-builds/src-noconflict/mode-html";
+// import "ace-builds/src-noconflict/mode-css";
+// import "ace-builds/src-noconflict/mode-python";
+// import "ace-builds/src-noconflict/mode-javascript";
+// import "ace-builds/src-noconflict/mode-java";
+// import "ace-builds/src-noconflict/mode-typescript";
+// import "ace-builds/src-noconflict/mode-lua";
+// import "ace-builds/src-noconflict/mode-rust";
+// import "ace-builds/src-noconflict/mode-golang";
+// import "ace-builds/src-noconflict/mode-dart";
+// import "ace-builds/src-noconflict/mode-swift";
+// import "ace-builds/src-noconflict/mode-zig";
+// import "ace-builds/src-noconflict/mode-ruby";
 
-// themes
-import "ace-builds/src-noconflict/theme-xcode";
-import "ace-builds/src-noconflict/theme-gruvbox";
-import "ace-builds/src-noconflict/theme-one_dark";
-import "ace-builds/src-noconflict/theme-nord_dark";
-import "ace-builds/src-noconflict/theme-dracula";
-import "ace-builds/src-noconflict/theme-eclipse";
+// // themes
+// import "ace-builds/src-noconflict/theme-xcode";
+// import "ace-builds/src-noconflict/theme-gruvbox";
+// import "ace-builds/src-noconflict/theme-one_dark";
+// import "ace-builds/src-noconflict/theme-nord_dark";
+// import "ace-builds/src-noconflict/theme-dracula";
+// import "ace-builds/src-noconflict/theme-eclipse";
 
 interface CodeEditorProps {
 	language: string;
