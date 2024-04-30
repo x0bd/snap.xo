@@ -26,7 +26,7 @@ const Footer = () => {
 				href="https://github.com/x0bd/snap.sh"
 				target="_blank"
 			>
-				Source Code Here &nbsp;&#129109;
+				Source Code &nbsp;&#129109;
 			</Link>
 		</div>
 	);
