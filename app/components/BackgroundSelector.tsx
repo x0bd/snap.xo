@@ -27,7 +27,7 @@ const BackgroundSelector = ({
 	return (
 		<OutsideClickHandler onOutsideClick={() => setShowDropDown(false)}>
 			<div className="bg-selector relative" onClick={toggleDropDown}>
-				<p className="py-[5px] text-sm font-medium">Theme Selector</p>
+				<p className="py-[5px] text-sm font-medium">Theme</p>
 				<div className="dropdown-title w-[62px]">
 					<div
 						className="rounded-full w-[20px] h-[20px]"
