@@ -35,7 +35,7 @@ export default function Page() {
 				/>
 			</header>
 
-			{/* <div className="code-editor editor-ref mt-[14rem]" ref={editorRef}>
+			<div className="code-editor editor-ref mt-[14rem]" ref={editorRef}>
 				<CodeEditor
 					language={language}
 					theme={theme}
@@ -43,7 +43,7 @@ export default function Page() {
 					icon={activeIcon}
 					currentPadding={"2px"}
 				/>
-			</div> */}
+			</div>
 
 			<Footer />
 		</main>
