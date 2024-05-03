@@ -84,8 +84,8 @@ function CodeEditor({
 
 	return (
 		<Resizable
-			minHeight={466}
-			minWidth={510}
+			minHeight={400}
+			minWidth={420}
 			defaultSize={{
 				width: width,
 				height: height || 500,

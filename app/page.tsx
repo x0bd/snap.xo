@@ -6,7 +6,7 @@ import AceEditor from "react-ace";
 import Footer from "./components/Footer";
 import CodeEditor from "./components/CodeEditor";
 import { backgrounds, themes, languages } from "./lib/lib";
-import { Download } from "lucide-react";
+import { Download, SunDimIcon } from "lucide-react";
 import LanguageSelector from "./components/LanguageSelector";
 import CodeThemeSelector from "./components/CodeThemeSelector";
 import BackgroundSelector from "./components/BackgroundSelector";
@@ -61,7 +61,23 @@ export default function Page() {
 
 	return (
 		<main className=" h-[100vh] flex flex-col items-center justify-between">
-			<header className="mt-6 flex gap-6 w-[940px] p-5 fixed top-0 left-1/2 translate-x-[-50%] z-10 bg-[#191919] rounded border border-[#3C3C3C] shadow-md">
+			<section className="flex mt-10 flex-row w-[920px] items-center justify-between">
+				<h1 className="font-mono font-medium text-md">Snap.sh</h1>
+				{/* Add Theme Switcher Button Func here */}
+				<SunDimIcon />
+			</section>
+
+			<section className="code-editor editor-ref mt-10" ref={editorRef}>
+				<CodeEditor
+					language={language}
+					theme={theme}
+					background={background}
+					icon={activeIcon}
+					currentPadding={"2px"}
+				/>
+			</section>
+
+			<section className="mt-6 flex gap-6 w-[920px] p-5 bg-[#191919] rounded border border-[#3C3C3C] shadow-md">
 				<LanguageSelector
 					language={language}
 					setLanguage={setLanguage}
@@ -88,18 +104,7 @@ export default function Page() {
 						Export Image
 					</button>
 				</div>
-			</header>
-
-			<div className="code-editor editor-ref mt-[14rem]" ref={editorRef}>
-				<CodeEditor
-					language={language}
-					theme={theme}
-					background={background}
-					icon={activeIcon}
-					currentPadding={"2px"}
-				/>
-			</div>
-
+			</section>
 			<Footer />
 		</main>
 	);
