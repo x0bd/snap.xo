@@ -10,6 +10,7 @@ import { Download } from "lucide-react";
 import LanguageSelector from "./components/LanguageSelector";
 import CodeThemeSelector from "./components/CodeThemeSelector";
 import BackgroundSelector from "./components/BackgroundSelector";
+import PaddingSelector from "./components/PaddingSelector";
 
 export default function Page() {
 	const editorRef = useRef(null);
@@ -19,6 +20,7 @@ export default function Page() {
 	const [paddings, setPaddings] = useState(["1rem", "2rem", "3rem", "4rem"]);
 	const [theme, setTheme] = useState(themes[0]);
 	const [activeIcon, setActiveIcon] = useState(languages[0].icon);
+	const [currentPadding, setCurrentPadding] = useState(paddings[2]);
 
 	return (
 		<main className=" h-[100vh] flex flex-col items-center justify-between">
@@ -32,6 +34,12 @@ export default function Page() {
 				<BackgroundSelector
 					background={background}
 					setBackground={setBackground}
+				/>
+
+				<PaddingSelector
+					paddings={paddings}
+					currentPadding={currentPadding}
+					setCurrentPadding={setCurrentPadding}
 				/>
 			</header>
 
