@@ -42,7 +42,7 @@ export const getExtension = (language: string) => {
 		case "Java":
 			return ".java";
 		case "TypeScript":
-			return "/ts";
+			return ".ts";
 		case "Rust":
 			return ".rs";
 		default:

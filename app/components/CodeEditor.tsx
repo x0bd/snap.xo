@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import { Resizable } from "re-resizable";
-import ace from "react-ace";
 import { getExtension, initialCode } from "../lib/lib";
 
 // languages
