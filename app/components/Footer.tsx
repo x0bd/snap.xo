@@ -15,7 +15,7 @@ const Footer = () => {
 			</Link>
 			<Link
 				className="text-sm font-medium hover:text-slate-200 ease-in-out transition-all duration-500"
-				href="https://vercel.com"
+				href="https://ray.so"
 				target="_blank"
 			>
 				{" "}
