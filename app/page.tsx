@@ -61,23 +61,13 @@ export default function Page() {
 
 	return (
 		<main className=" h-[100vh] flex flex-col items-center justify-between">
-			<section className="flex mt-10 flex-row w-[920px] items-center justify-between">
+			<section className="flex mt-10 flex-row w-[920px]  items-center justify-between">
 				<h1 className="font-mono font-medium text-md">Snap.sh</h1>
 				{/* Add Theme Switcher Button Func here */}
 				<SunDimIcon />
 			</section>
 
-			<section className="code-editor editor-ref mt-10" ref={editorRef}>
-				<CodeEditor
-					language={language}
-					theme={theme}
-					background={background}
-					icon={activeIcon}
-					currentPadding={"2px"}
-				/>
-			</section>
-
-			<section className="mt-6 flex gap-6 w-[920px] p-5 bg-[#191919] rounded border border-[#3C3C3C] shadow-md">
+			<section className="mt-6 flex gap-6 w-[920px] p-5 fixed bottom-40 left-1/2 translate-x-[-50%] z-10 bg-[#191919] rounded border-[#3c3c3c] shadow-md">
 				<LanguageSelector
 					language={language}
 					setLanguage={setLanguage}
@@ -104,6 +94,16 @@ export default function Page() {
 						Export Image
 					</button>
 				</div>
+			</section>
+
+			<section className="code-editor editor-ref mt-10" ref={editorRef}>
+				<CodeEditor
+					language={language}
+					theme={theme}
+					background={background}
+					icon={activeIcon}
+					currentPadding={"2px"}
+				/>
 			</section>
 			<Footer />
 		</main>
