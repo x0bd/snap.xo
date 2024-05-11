@@ -14,7 +14,6 @@ import PaddingSelector from "./components/PaddingSelector";
 
 export default function Page() {
 	const editorRef = useRef(null);
-
 	const [language, setLanguage] = useState(languages[0].name);
 	const [background, setBackground] = useState(backgrounds[0]);
 	const [paddings, setPaddings] = useState(["1rem", "2rem", "3rem", "4rem"]);
