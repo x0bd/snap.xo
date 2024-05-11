@@ -4,7 +4,7 @@ import Link from "next/Link";
 
 const Footer = () => {
 	return (
-		<div className="flex items-center mt-10 gap-10 py-16">
+		<div className="flex items-center mt-20 gap-10 py-16">
 			<Link
 				className="text-sm font-medium hover:text-slate-200 ease-in-out transition-all duration-500"
 				href="https://xoboid.vercel.app"

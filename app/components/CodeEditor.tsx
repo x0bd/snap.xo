@@ -28,6 +28,7 @@ import "ace-builds/src-noconflict/theme-one_dark";
 import "ace-builds/src-noconflict/theme-nord_dark";
 import "ace-builds/src-noconflict/theme-dracula";
 import "ace-builds/src-noconflict/theme-eclipse";
+import Image from "next/image";
 
 interface CodeEditorProps {
 	language: string;
@@ -119,7 +120,13 @@ function CodeEditor({
 					</div>
 
 					<div className="icon flex justify-center items-center p-1 bg-black bg-opacity-20 rounded-sm">
-						<img src={icon} className="w-[33px]" alt="" />
+						<Image
+							src={icon}
+							width={100}
+							height={100}
+							alt=""
+							className="w-[33px]"
+						/>
 					</div>
 				</div>
 				<AceEditor
