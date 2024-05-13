@@ -5,7 +5,7 @@ export const languages = [
 	},
 	{
 		name: "HTML",
-		icon: "icons/html/.svg",
+		icon: "icons/html.svg",
 	},
 	{
 		name: "CSS",
@@ -13,7 +13,7 @@ export const languages = [
 	},
 	{
 		name: "Python",
-		icon: "icons/python",
+		icon: "icons/python.svg",
 	},
 	{
 		name: "Java",
@@ -22,10 +22,6 @@ export const languages = [
 	{
 		name: "TypeScript",
 		icon: "icons/typescript.svg",
-	},
-	{
-		name: "Rust",
-		icon: "icons/rust.svg",
 	},
 ];
 
@@ -43,40 +39,44 @@ export const getExtension = (language: string) => {
 			return ".java";
 		case "TypeScript":
 			return ".ts";
-		case "Rust":
-			return ".rs";
 		default:
 			return ".js";
 	}
 };
 
-export const themes = [
-	"xcode",
-	"gruvbox",
-	"one dark",
-	"nord dark",
-	"dracula",
-	"eclipse",
-];
+export const themes = ["monokai", "twilight", "terminal"];
 
 export const backgrounds = [
-	"linear-gradient(354deg,#EB6F92,#F6C177)",
+	"linear-gradient(354deg,#ff75b5,#ffb86c)",
+	"linear-gradient(140deg, rgb(255, 207, 115), rgb(255, 122, 47))",
 	"linear-gradient(90deg,#93f9b9,#1d976c)",
 	"linear-gradient(140deg, rgb(142, 199, 251), rgb(28, 85, 170))",
-	"linear-gradient(140deg, rgb(255, 207, 115), rgb(255, 122, 47))",
 	"linear-gradient(337deg,#654ea3,#da98b4)",
+	"#000",
+	"#fff",
 	"linear-gradient(270deg,#fc6767,#ec008c)",
+	"linear-gradient(140deg, rgb(165, 142, 251), rgb(233, 191, 248))",
+	"linear-gradient(270deg,#514a9d,#24c6dc)",
 ];
 
-export const initialCode = `function guessMyNumber() {
-  const userGuess = prompt("Guess a number between 1 and 10:");
-  const secretNumber = Math.ceil(Math.random() * 10);
-
-  if (parseInt(userGuess) === secretNumber) {
-    return "Wow, you must be a psychic!";
-  } else {
-    return \`Nope, the number was \${secretNumber}. Better luck next time!\`;
+export const initialCode = `function randomNumber(min: number, max: number): number {
+  // Ensure min is less than or equal to max
+  if (min > max) {
+    throw new Error("Minimum value cannot be greater than maximum value.");
   }
+
+  // Generate a random number between 0 (inclusive) and 1 (exclusive)
+  const randomDecimal = Math.random();
+
+  // Scale the random number to the desired range (min to max)
+  const range = max - min;
+  const randomWithinRange = randomDecimal * range;
+
+  // Add the minimum value to get the final random number within the range
+  return randomWithinRange + min;
 }
 
-console.log(guessMyNumber());`;
+// Example usage
+const randomNum = randomNumber(10, 20); // Generates a random number between 10 and 20 (inclusive)
+console.log(randomNum);
+`;
