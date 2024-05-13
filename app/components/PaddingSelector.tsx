@@ -1,4 +1,5 @@
 "use client";
+import React from "react";
 
 interface PaddingSelectorProps {
 	paddings: string[];
@@ -6,11 +7,11 @@ interface PaddingSelectorProps {
 	setCurrentPadding: (padding: string) => void;
 }
 
-const PaddingSelector = ({
+function PaddingSelector({
 	paddings,
 	currentPadding,
 	setCurrentPadding,
-}: PaddingSelectorProps) => {
+}: PaddingSelectorProps) {
 	const changePadding = (newPadding: string) => {
 		setCurrentPadding(newPadding);
 	};
@@ -24,10 +25,12 @@ const PaddingSelector = ({
 						<button
 							key={i}
 							onClick={() => changePadding(padding)}
-							className={`h-[37px] flex items-center justify-center text-sm px-2 cursor-pointer ${
-								currentPadding === padding &&
-								"bg-[#3C3C3C] text-white rounded-md"
-							} hover:text-white ease-linear transition-all duration-300`}
+							className={`h-[37px]  flex items-center justify-center text-sm px-2 cursor-pointer
+                ${
+					currentPadding === padding &&
+					"bg-[#3C3C3C] text-white rounded-md"
+				} hover:text-white ease-linear transition-all duration-300
+              `}
 						>
 							{padding}
 						</button>
@@ -36,6 +39,6 @@ const PaddingSelector = ({
 			</div>
 		</div>
 	);
-};
+}
 
 export default PaddingSelector;
