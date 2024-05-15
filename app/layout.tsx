@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "snap.sh",
+	title: "snap.sh - create beautiful screenshots of your code",
 	description: "create beautiful snaps of your code",
 };
 

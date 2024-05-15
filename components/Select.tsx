@@ -73,7 +73,3 @@ export function Select({
 		</OutsideClickHandler>
 	);
 }
-
-
-
-
