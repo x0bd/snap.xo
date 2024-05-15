@@ -1,0 +1,1 @@
+export const paddings = ["16px", "32px", "48px", "64px"]
