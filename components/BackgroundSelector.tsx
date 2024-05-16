@@ -1,10 +1,10 @@
 "use client";
 
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { EditorContext } from "@/context/editor.context";
 import { backgrounds } from "@/data";
 
-export function BackgroundSeletor() {
+export function BackgroundSelector() {
 	const {
 		state: { background },
 		dispatch,

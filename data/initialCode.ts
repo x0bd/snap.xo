@@ -1,12 +1,17 @@
-export const initialCode = `function guessMyNumber() {
-  const userGuess = prompt("Guess a number between 1 and 10:");
-  const secretNumber = Math.ceil(Math.random() * 10);
+export const initialCode = `const colors = require('colors'); 
 
-  if (parseInt(userGuess) === secretNumber) {
-    return "Wow, you must be a psychic!";
-  } else {
-    return \`Nope, the number was \${secretNumber}. Better luck next time!\`;
-  }
+function typeWriter(message, delay) {
+  let i = 0;
+  const intervalId = setInterval(() => {
+    process.stdout.write(message[i]);
+    i++;
+    if (i === message.length) {
+      clearInterval(intervalId);
+      console.log("\n"); // Add a newline after typing
+    }
+  }, delay);
 }
 
-console.log(guessMyNumber());`;
+const momMessage = "Hello".red + " Mom!".green;
+typeWriter(momMessage, 50);
+`;

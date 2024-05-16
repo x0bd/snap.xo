@@ -1,5 +1,5 @@
 export { Spinner } from "./Spinner";
-export { BackgroundSeletor } from "./BackgroundSelector";
+export { BackgroundSelector } from "./BackgroundSelector";
 export { Button } from "./Button";
 export { CodeEditor } from "./CodeEditor";
 export { CustomizationBar } from "./CustomizationBar";
