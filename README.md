@@ -1,3 +1,3 @@
-# Snap.sh
+#### Snap.xo
 
-# Inspired by raycasts ray.so
+Create and share beautiful snaps of your code.

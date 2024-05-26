@@ -1,9 +1,9 @@
 export const themes = [
-  "monokai",
-  "twilight",
-  "terminal",
-  "tomorrow_night",
-  "dracula",
-  "github_dark",
-  "gruvbox"
+	"github_dark",
+	"monokai",
+	"twilight",
+	"terminal",
+	"tomorrow_night",
+	"dracula",
+	"gruvbox",
 ];

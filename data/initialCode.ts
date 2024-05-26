@@ -5,7 +5,6 @@ function leftpad(str, len, ch) {
   var i = -1;
 
   if (!ch && ch !== 0) ch = ' ';
-
   len = len - str.length;
 
   while (i++ < len) {
