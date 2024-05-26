@@ -22,7 +22,7 @@ export function Footer() {
 			</Link>
 			<Link
 				target="_blank"
-				href="https://github.com/x0bd/snap.sh"
+				href="https://github.com/x0bd/snap.xo"
 				className="flex items-center text-sm font-medium hover:text-slate-200 ease-in-out transition-all duration-500"
 			>
 				<span className="">source code</span>

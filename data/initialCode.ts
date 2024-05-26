@@ -1,17 +1,15 @@
-export const initialCode = `const colors = require('colors'); 
+export const initialCode = `module.exports = leftpad;
 
-function typeWriter(message, delay) {
-  let i = 0;
-  const intervalId = setInterval(() => {
-    process.stdout.write(message[i]);
-    i++;
-    if (i === message.length) {
-      clearInterval(intervalId);
-      console.log("\n"); // Add a newline after typing
-    }
-  }, delay);
-}
+function leftpad(str, len, ch) {
+  str = String(str);
+  var i = -1;
 
-const momMessage = "Hello".red + " Mom!".green;
-typeWriter(momMessage, 50);
-`;
+  if (!ch && ch !== 0) ch = ' ';
+
+  len = len - str.length;
+
+  while (i++ < len) {
+    str = ch + str;
+  }
+  return str;
+}`;

@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "snap.sh - create beautiful screenshots of your code",
-	description: "create beautiful snaps of your code",
+	title: "snap.xo - create beautiful snaps of your code",
+	description: "create and share beautiful snaps of your code",
 };
 
 export default function RootLayout({
