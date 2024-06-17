@@ -15,6 +15,7 @@ import "ace-builds/src-noconflict/mode-golang";
 import "ace-builds/src-noconflict/mode-markdown";
 import "ace-builds/src-noconflict/mode-ruby";
 import "ace-builds/src-noconflict/mode-csharp";
+import "ace-builds/src-noconflict/mode-zig";
 
 // themes
 import "ace-builds/src-noconflict/theme-monokai";
@@ -24,6 +25,7 @@ import "ace-builds/src-noconflict/theme-dracula";
 import "ace-builds/src-noconflict/theme-tomorrow_night";
 import "ace-builds/src-noconflict/theme-github_dark";
 import "ace-builds/src-noconflict/theme-gruvbox";
+import "ace-builds/src-noconflict/theme-xcode";
 
 import { EditorContext } from "@/context/editor.context";
 

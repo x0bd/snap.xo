@@ -6,4 +6,5 @@ export const themes = [
 	"tomorrow_night",
 	"dracula",
 	"gruvbox",
+	"xcode",
 ];
