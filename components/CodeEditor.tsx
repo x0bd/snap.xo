@@ -16,6 +16,7 @@ import "ace-builds/src-noconflict/mode-markdown";
 import "ace-builds/src-noconflict/mode-ruby";
 import "ace-builds/src-noconflict/mode-csharp";
 import "ace-builds/src-noconflict/mode-zig";
+import "ace-builds/src-noconflict/mode-rust";
 
 // themes
 import "ace-builds/src-noconflict/theme-monokai";

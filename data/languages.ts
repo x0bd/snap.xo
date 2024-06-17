@@ -1,4 +1,5 @@
 export const languages = [
+	"rust",
 	"javascript",
 	"html",
 	"css",
@@ -10,7 +11,6 @@ export const languages = [
 	"elixir",
 	"markdown",
 	"ruby",
-	"rust",
 	"zig",
 	"swift",
 	"kotlin",

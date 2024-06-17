@@ -1,14 +1,11 @@
-export const initialCode = `module.exports = leftpad;
-
-function leftpad(str, len, ch) {
-  str = String(str);
-  var i = -1;
-
-  if (!ch && ch !== 0) ch = ' ';
-  len = len - str.length;
-
-  while (i++ < len) {
-    str = ch + str;
-  }
-  return str;
+export const initialCode = `fn main() {
+    let matches = ...;
+    let text = matches.values_of_lossy("text").unwrap();
+    let omit_newline = matches = matches.is_present("omit_newline");
+    
+    let mut ending = " ";
+    if omit_newline {
+        ending = "";
+    }
+    print!("{}{}", text.join(" "), ending);
 }`;
