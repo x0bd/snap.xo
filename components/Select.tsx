@@ -36,9 +36,7 @@ export function Select({
 		>
 			<div
 				onClick={toggleDropdown}
-				className="w-[160px] relative border border-white/20 rounded 
-        flex items-center hover:text-gray-50 transition-all duration-300
-        ease-in-out cursor-pointer hover:border-white/40 text-xs"
+				className="w-[160px] relative border border-white/20 rounded flex items-center hover:text-gray-50 transition-all duration-300ease-in-out cursor-pointer hover:border-white/40 text-xs"
 			>
 				<div className="w-8 h-8 border-r border-white/20 flex items-center justify-center">
 					{icon}
@@ -51,18 +49,15 @@ export function Select({
 					<ul
 						role="listbox"
 						aria-expanded={showDropdown}
-						className="z-50 py-2 px-3 absolute left-8 right-0 top-9 bg-[#191919] 
-            border border-white/20 text-gray-400 rounded flex flex-col 
-            hover:border-white/40 transition-all duration-300"
+						className="z-50 py-2 px-3 absolute left-8 right-0 top-9 bg-[#191919] border border-white/20 text-gray-400 rounded flex flex-col hover:border-white/40 transition-all duration-300"
 					>
 						{options.sort().map((option) => (
 							<button
 								key={option}
 								onClick={() => handleOptionChange(option)}
-								className={`capitalize text-left hover:text-gray-50 
-                transition-all duration-300 ease-in-out py-1 ${
-					option === selectedOption && "text-gray-50"
-				}`}
+								className={`capitalize text-left hover:text-gray-50 transition-all duration-300 ease-in-out py-1 ${
+									option === selectedOption && "text-gray-50"
+								}`}
 							>
 								{option}
 							</button>
